@@ -2,13 +2,12 @@
 #include <math.h>
 #include "calculator.h"
 #include "display.h"
-#include "menu.h"
+#include "insert.h"
 
 
 void Calculator::addition(int value1, int value2){
     Calculator c;
     Display display;
-    Buttons b;
 
     int result = value1 + value2;
 
@@ -19,7 +18,6 @@ void Calculator::addition(int value1, int value2){
 void Calculator::multiplication(int value1, int value2){
     Calculator c;
     Display display;
-    Buttons b;
 
     int result = value1 * value2;
 
@@ -30,7 +28,6 @@ void Calculator::multiplication(int value1, int value2){
 void Calculator::subtraction(int value1, int value2){
     Calculator c;
     Display display;
-    Buttons b;
 
     int result = value1 - value2;
 
@@ -41,7 +38,6 @@ void Calculator::subtraction(int value1, int value2){
 void Calculator::division(int value1, int value2){
     Calculator c;
     Display display;
-    Buttons b;
 
     int result = value1 / value2;
 
@@ -52,7 +48,6 @@ void Calculator::division(int value1, int value2){
 void Calculator::squareRoot(int value){
     Calculator c;
     Display display;
-    Buttons b;
 
     int result = sqrt(value);
 
