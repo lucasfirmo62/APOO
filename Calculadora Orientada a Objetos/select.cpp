@@ -46,16 +46,16 @@ void Select::select(int value){
     Buttons b;
     List l;
 
-    if(i.on == value){
+    if(on == value){
         l.inicialing();
     }
-    else if(i.five == value){
+    else if(five == value){
         l.add(value);
-    }else if(i.nine == value){
+    }else if(nine == value){
         l.add(value);
-    }else if(i.addition == value){
+    }else if(addition == value){
         operation(value);
-    }else if(i.equal == value){
+    }else if(equal == value){
         if(opc == '+'){
             int result = l.numbers[0] + l.numbers[1];
             std::cout << result << "\n";
