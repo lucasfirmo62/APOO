@@ -1,7 +1,6 @@
 #include <iostream>
-#include "select.h"
+#include "ula.h"
 #include "display.h"
-#include "calculator.h"
 #include "buttons.h"
 
 int main() {
@@ -11,13 +10,13 @@ int main() {
 
     s.select(b.on);
 
-    //press 5+7=
+    //press 5+3=
     s.select(b.five);
     s.select(b.addition);
-    s.select(b.nine);
+    s.select(b.three);
     s.select(b.equal);
 
-    s.select(b.on);
+   /* s.select(b.on);
 
     //press 8-4=
     s.select(b.eight);
@@ -33,7 +32,7 @@ int main() {
     s.select(b.three);
     s.select(b.equal);
 
-    s.select(b.on);
+    s.select(b.on);*/
 
 
     return 0;
