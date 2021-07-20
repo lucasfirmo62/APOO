@@ -24,7 +24,10 @@ class Cpu{
   public:
     virtual void setDisplay(Display*) = 0; 
     virtual Display* getDisplay() = 0;
-    
+    int* numbers;
+    int qtd;
+    int result;
+    //char values[100];
     virtual void receiveDigit(Digit) = 0; 
     virtual void receiveOperation(Operation) = 0; 
     virtual void receiveControl(Control) = 0; 

@@ -5,16 +5,11 @@
  */
 #include <iostream>
 #include "Calculator.h"
-#include "LucasFirmoDisplay.h"
-#include "LucasFirmoCPU.h"
-#include "LucasFirmoCalculator.h"
-#include "LucasFirmoKeyboard.h"
-#include "LucasFirmoButton.h"
 
 class DisplayTest{
   public:
     static void run(Display* display){
-        display->clear();
+        /*display->clear();
         display->addDigit(ZERO);
         display->addDigit(ONE);
         display->addDigit(TWO);
@@ -25,7 +20,7 @@ class DisplayTest{
         display->addDigit(SIX);
         display->addDigit(SEVEN);
         display->addDigit(EIGHT);
-        display->addDigit(NINE);
+        display->addDigit(NINE);*/
     }
 };
 
