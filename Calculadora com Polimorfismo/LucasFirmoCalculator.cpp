@@ -1,12 +1,18 @@
-#include "LucasFirmocalculato.h"
+#include "LucasFirmoCalculator.h"
+#include "LucasFirmoDisplay.h"
+#include "LucasFirmoKeyboard.h"
+#include "LucasFirmoCPU.h"
 
-    LucasFirmoCalculator(Display*, Cpu*, Keyboard*){  }
 
-    void setKeyboard(Keyboard*){   }
-    Keyboard* getKeyboard(){ return new LucasFirmoKeyboard(new LucasFirmoCpu(new LucasFirmoDisplay())); }
+    LucasFirmoCalculator::LucasFirmoCalculator(Display*, Cpu*, Keyboard*){  }
 
-    void setDisplay(Display* display){   }
-    Display* getDisplay(){ return new LucasFirmoDisplay(); }
+	//LucasFirmoCalculator::~LucasFirmoCalculator(){}
 
-    void setCpu(Cpu* cpu){   }
-    Cpu* getCpu(){ return new LucasFirmoCpu(new LucasFirmoDisplay()); }
+    void LucasFirmoCalculator::setKeyboard(Keyboard*){   }
+    Keyboard* LucasFirmoCalculator::getKeyboard(){ return new LucasFirmoKeyboard(new LucasFirmoCpu(new LucasFirmoDisplay())); }
+
+    void LucasFirmoCalculator::setDisplay(Display* display){   }
+    Display* LucasFirmoCalculator::getDisplay(){ return new LucasFirmoDisplay(); }
+
+    void LucasFirmoCalculator::setCpu(Cpu* cpu){   }
+    Cpu* LucasFirmoCalculator::getCpu(){ return new LucasFirmoCpu(new LucasFirmoDisplay()); }

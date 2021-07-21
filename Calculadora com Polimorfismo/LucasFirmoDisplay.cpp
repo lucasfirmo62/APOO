@@ -1,5 +1,7 @@
 #include "LucasFirmoDisplay.h"
 
+LucasFirmoDisplay::LucasFirmoDisplay(){}
+
     void LucasFirmoDisplay::addDigit(Digit value){
       if(value == ZERO){
           std::cout << "00000\n0   0\n0   0\n0   0\n00000" << "\n\n";
@@ -35,7 +37,7 @@
     void LucasFirmoDisplay::setDecimalSeparator(){
       std::cout << "\n";
     } 
-    void setSignal(Signal value){
+    void LucasFirmoDisplay::setSignal(Signal value){
       if(value == NEGATIVE){
         std::cout <<"     \n     \n00000\n     \n     \n" ;
       }else if(value == POSITIVE){

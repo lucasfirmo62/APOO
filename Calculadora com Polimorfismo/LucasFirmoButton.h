@@ -5,25 +5,33 @@
 #include "LucasFirmoButtonNull.h"
 #pragma once
 
+class LucasFirmoButtonNull: public virtual Button{
+  public:
+    void setKeyboard(Keyboard*);
+    Keyboard* getKeyboard();
+    void press();
+    char getSymbol();
+};
+
 class LucasFirmoButton: public virtual Button{
   public:
-    void setKeyboard(Keyboard*){   }
-    Keyboard* getKeyboard(){ return new LucasFirmoKeyboard(new LucasFirmoCpu(new LucasFirmoDisplay())); }
-    void press(){    }
-    char getSymbol(){  return 0;  }
+    void setKeyboard(Keyboard*);
+    Keyboard* getKeyboard();
+    void press();
+    char getSymbol();
 };
 
 class LucasFirmoDigitButton: public LucasFirmoButton, public DigitButton{
   public:
-    Digit getDigit(){ return ZERO;  }
+    Digit getDigit();
 };
 
 class LucasFirmoOperationButton: public LucasFirmoButton, public OperationButton{
   public:
-    Operation getOperation(){ return NONE; }
+    Operation getOperation();
 };
 
 class LucasFirmoControlButton: public LucasFirmoButton, public ControlButton{
   public:
-    Control getControl(){ return OFF; }
+    Control getControl();
 };

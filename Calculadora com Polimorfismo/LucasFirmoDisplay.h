@@ -8,4 +8,5 @@ class LucasFirmoDisplay: public Display{
     void setDecimalSeparator(); 
     void setSignal(Signal value);
     void clear();
+    LucasFirmoDisplay();
 };

@@ -9,8 +9,8 @@
 
 /* Here include your .h files */
 
-int main()
-{
+int main(){
+
     /* Replace all Mockups classes with yours own */
     Display* display = new LucasFirmoDisplay();
 

@@ -29,25 +29,25 @@ class CpuTest{
     static void run(Cpu* cpu, Display* display){
           cpu->setDisplay(display);
           
-          cpu->receiveDigit(ONE);
-          cpu->receiveDigit(TWO);
-          cpu->receiveDigit(THREE);
+          //cpu->receiveDigit(ONE);
+          //cpu->receiveDigit(TWO);
+          //cpu->receiveDigit(THREE);
           
-          cpu->cancel();
+          //cpu->cancel();
           
-          cpu->receiveDigit(ONE);
-          cpu->receiveDigit(TWO);
-          cpu->receiveDigit(THREE);
-          
-          cpu->receiveOperation(ADDITION);
-
-          cpu->receiveDigit(FOUR);
           cpu->receiveDigit(FIVE);
-          cpu->receiveDigit(SIX);
+          //cpu->receiveDigit(TWO);
+          //cpu->receiveDigit(THREE);
+          
+          cpu->receiveOperation(ADDITION);
+
+          cpu->receiveDigit(ONE);
+          //cpu->receiveDigit(FIVE);
+          //cpu->receiveDigit(SIX);
           
           cpu->receiveOperation(EQUAL);
           
-          cpu->receiveOperation(SUBTRACTION);
+          /*cpu->receiveOperation(SUBTRACTION);
  
           cpu->receiveDigit(ONE);
           cpu->receiveDigit(ONE);
@@ -63,7 +63,7 @@ class CpuTest{
 
           cpu->receiveOperation(EQUAL);
 
-          cpu->reset();
+          cpu->reset();*/
     }
 };
 

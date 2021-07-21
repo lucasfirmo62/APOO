@@ -23,4 +23,5 @@ class LucasFirmoCpu: public Cpu{
     void receiveControl(Control value);
     void cancel();
     void reset();
+    int saveOperation;
 };
