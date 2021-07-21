@@ -46,6 +46,13 @@ class CpuTest{
           //cpu->receiveDigit(SIX);
           
           cpu->receiveOperation(EQUAL);
+          cpu->reset();
+
+          cpu->receiveDigit(NINE);
+          cpu->receiveOperation(ADDITION);
+          cpu->receiveDigit(NINE);
+
+          cpu->receiveOperation(EQUAL);
           
           /*cpu->receiveOperation(SUBTRACTION);
  

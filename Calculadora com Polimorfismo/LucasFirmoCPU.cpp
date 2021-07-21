@@ -30,24 +30,36 @@ LucasFirmoCpu::LucasFirmoCpu(Display* display){  }
 
     	LucasFirmoDisplay D;
 
-    	if(value == 0){
+    	if(value == (ADDITION || SUBTRACTION || DIVISION || MULTIPLICATION)){
     		saveOperation = value;
     	}
 
 
     	if(value == 4){
     		if(saveOperation == 0){
-        		result = numbers[0] + numbers[1];
-        		std::cout << "result = " << result << "\n\n";
-      		}
+      				}if(saveOperation == 0){
+		        		result = numbers[0] + numbers[1];
+		        		D.resultDigit(result);
+			    	}if(saveOperation == 1){
+        				result = numbers[0] - numbers[1];
+		        		std::cout << "result = " << result << "\n\n";
+			    	}if(saveOperation == 2){
+        				result = numbers[0] / numbers[1];
+		        		std::cout << "result = " << result << "\n\n";
+			    	}if(saveOperation == 3){
+        				result = numbers[0] * numbers[1];
+		        		std::cout << "result = " << result << "\n\n";
+			    	}
     	}
     } 
 
     void LucasFirmoCpu::receiveControl(Control){   } 
-    void LucasFirmoCpu::cancel(){   }
+    void LucasFirmoCpu::cancel(){
+    	result = 0;
+    }
     void LucasFirmoCpu::reset(){   
         qtd = 0;
         result = 0;
         delete numbers;
-        numbers = new int(2);
+        std::cout << "\n\n\n\n\n";
     } 
