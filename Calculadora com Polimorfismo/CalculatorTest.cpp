@@ -35,42 +35,51 @@ class CpuTest{
           
           //cpu->cancel();
           
-          cpu->receiveDigit(FIVE);
+          //cpu->receiveDigit(FIVE);
           //cpu->receiveDigit(TWO);
           //cpu->receiveDigit(THREE);
           
-          cpu->receiveOperation(ADDITION);
+          //cpu->receiveOperation(ADDITION);
 
-          cpu->receiveDigit(ONE);
+          //cpu->receiveDigit(ONE);
           //cpu->receiveDigit(FIVE);
           //cpu->receiveDigit(SIX);
           
-          cpu->receiveOperation(EQUAL);
-          cpu->reset();
+          //cpu->receiveOperation(EQUAL);
+          //cpu->reset();
 
-          cpu->receiveDigit(NINE);
+          //cpu->receiveDigit(FIVE);
+          //cpu->receiveOperation(ADDITION);
+          //cpu->receiveDigit(FIVE);
+
+          //cpu->receiveOperation(EQUAL);
+
+          //cpu->reset();
+
+          cpu->receiveDigit(ONE);
+          cpu->receiveDigit(ONE);
           cpu->receiveOperation(ADDITION);
-          cpu->receiveDigit(NINE);
+          cpu->receiveDigit(ONE);
+          cpu->receiveDigit(ONE);
+
 
           cpu->receiveOperation(EQUAL);
           
-          /*cpu->receiveOperation(SUBTRACTION);
+          //cpu->receiveOperation(SUBTRACTION);
  
-          cpu->receiveDigit(ONE);
-          cpu->receiveDigit(ONE);
-          cpu->receiveDigit(ONE);
+          //cpu->receiveDigit(FIVE);
+          //cpu->receiveDigit(ONE);
+          //cpu->receiveDigit(ONE);
  
-          cpu->receiveOperation(ADDITION);
+          //cpu->receiveOperation(ADDITION);
 
-          cpu->receiveDigit(ONE);
+          //cpu->receiveDigit(FIVE);
 
-          cpu->receiveOperation(ADDITION);
+          //cpu->receiveOperation(EQUAL);
 
-          cpu->receiveDigit(ONE);
+          printf("FOI\n");
 
-          cpu->receiveOperation(EQUAL);
-
-          cpu->reset();*/
+          cpu->reset();
     }
 };
 

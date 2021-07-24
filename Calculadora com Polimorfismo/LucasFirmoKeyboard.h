@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Calculator.h"
-#include "LucasFirmoButtonNull.h"
 #include "LucasFirmoCPU.h"
 #pragma once
 

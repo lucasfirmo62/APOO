@@ -2,7 +2,6 @@
 #include <iostream>
 #include "LucasFirmoDisplay.h"
 #include "LucasFirmoKeyboard.h"
-#include "LucasFirmoButtonNull.h"
 #pragma once
 
 class LucasFirmoButtonNull: public virtual Button{

@@ -11,17 +11,19 @@
 //enum Control{ON, OFF, CANCEL, RESET, MEMORY_READ_CLEAR, MEMORY_ADDITION, MEMORY_SUBTRACTION};
 
 class LucasFirmoCpu: public Cpu{
+  private:
+    int numberUnion;
+
   public:
     LucasFirmoCpu(Display* display);
     void setDisplay(Display* display);
     Display* getDisplay();
-
-    void add(Digit value);
-    
+    void add(int value);
     void receiveDigit(Digit value);
     void receiveOperation(Operation value);
     void receiveControl(Control value);
     void cancel();
     void reset();
+    int concatenateDigits(int a, int b);
     int saveOperation;
 };
