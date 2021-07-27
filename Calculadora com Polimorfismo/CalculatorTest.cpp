@@ -29,57 +29,17 @@ class CpuTest{
     static void run(Cpu* cpu, Display* display){
           cpu->setDisplay(display);
           
-          //cpu->receiveDigit(ONE);
-          //cpu->receiveDigit(TWO);
-          //cpu->receiveDigit(THREE);
-          
-          //cpu->cancel();
-          
-          //cpu->receiveDigit(FIVE);
-          //cpu->receiveDigit(TWO);
-          //cpu->receiveDigit(THREE);
-          
-          //cpu->receiveOperation(ADDITION);
-
-          //cpu->receiveDigit(ONE);
-          //cpu->receiveDigit(FIVE);
-          //cpu->receiveDigit(SIX);
-          
-          //cpu->receiveOperation(EQUAL);
-          //cpu->reset();
-
-          //cpu->receiveDigit(FIVE);
-          //cpu->receiveOperation(ADDITION);
-          //cpu->receiveDigit(FIVE);
-
-          //cpu->receiveOperation(EQUAL);
-
-          //cpu->reset();
-
-          cpu->receiveDigit(ONE);
           cpu->receiveDigit(ONE);
           cpu->receiveOperation(ADDITION);
-          cpu->receiveDigit(ONE);
           cpu->receiveDigit(ONE);
 
 
           cpu->receiveOperation(EQUAL);
-          
-          //cpu->receiveOperation(SUBTRACTION);
- 
-          //cpu->receiveDigit(FIVE);
-          //cpu->receiveDigit(ONE);
-          //cpu->receiveDigit(ONE);
- 
-          //cpu->receiveOperation(ADDITION);
 
-          //cpu->receiveDigit(FIVE);
-
-          //cpu->receiveOperation(EQUAL);
-
-          printf("FOI\n");
+          // printf("FOI\n");
 
           cpu->reset();
+
     }
 };
 

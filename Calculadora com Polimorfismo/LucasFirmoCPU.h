@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Calculator.h"
 #include "LucasFirmoDisplay.h"
+#include <stdlib.h>
 
 
 #pragma once
@@ -13,6 +14,15 @@
 class LucasFirmoCpu: public Cpu{
   private:
     int numberUnion;
+    int* numbers;
+    int qtd;
+    int result;
+    int corse;
+    int ini;
+    char displayNumbers[9];
+    int numberInt;
+    char* dispNumb;
+    //char values[100];
 
   public:
     LucasFirmoCpu(Display* display);
@@ -24,6 +34,7 @@ class LucasFirmoCpu: public Cpu{
     void receiveControl(Control value);
     void cancel();
     void reset();
-    int concatenateDigits(int a, int b);
     int saveOperation;
+    void toString(Digit value);
+    void toInt(char number);
 };
