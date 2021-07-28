@@ -88,13 +88,14 @@ void LucasFirmoDisplay::MindSepResult(int result){
 
 }
 
-    void LucasFirmoDisplay::setSignal(Signal value){
-      if(value == NEGATIVE){
-        std::cout <<"     \n     \n00000\n     \n     \n" ;
-      }else if(value == POSITIVE){
-      std::cout <<"  0  \n  0  \n00000\n  0  \n  0  \n" ;
-      }
-    } 
-    void LucasFirmoDisplay::clear(){
+void LucasFirmoDisplay::setSignal(Signal value){
+  if(value == NEGATIVE){
+    std::cout <<"     \n     \n00000\n     \n     \n" ;
+  }else if(value == POSITIVE){
+  	std::cout <<"  0  \n  0  \n00000\n  0  \n  0  \n" ;
+  }
+} 
+
+void LucasFirmoDisplay::clear(){
       std::cout <<"\n\n\n\n\n" ;
     } 

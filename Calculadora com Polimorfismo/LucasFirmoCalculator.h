@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Calculator.h"
-#include "LucasFirmoKeyboard.h"
 #pragma once
 
 

@@ -8,7 +8,7 @@ LucasFirmoCpu::LucasFirmoCpu (Display * display){
 }
 
 void LucasFirmoCpu::setDisplay (Display * display){
-  //this->display = display;
+  this->display = display;
   numbers = new int (2);
   //dispNumb = new char(9);
 }
@@ -39,9 +39,10 @@ void LucasFirmoCpu::toString(Digit value){
 }
 
 void LucasFirmoCpu::receiveDigit (Digit value){
+
   LucasFirmoDisplay D;
 
-    D.addDigit (value);
+    D.addDigit(value);
 
   if (result != 0){
       numbers[0] = result;

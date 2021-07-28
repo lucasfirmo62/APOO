@@ -27,18 +27,18 @@ class DisplayTest{
 class CpuTest{
   public:
     static void run(Cpu* cpu, Display* display){
-          cpu->setDisplay(display);
+          // cpu->setDisplay(display);
           
-          cpu->receiveDigit(ONE);
-          cpu->receiveOperation(ADDITION);
-          cpu->receiveDigit(ONE);
+          // cpu->receiveDigit(ONE);
+          // cpu->receiveOperation(ADDITION);
+          // cpu->receiveDigit(ONE);
 
 
-          cpu->receiveOperation(EQUAL);
+          // cpu->receiveOperation(EQUAL);
 
-          // printf("FOI\n");
+          // // printf("FOI\n");
 
-          cpu->reset();
+          // cpu->reset();
 
     }
 };

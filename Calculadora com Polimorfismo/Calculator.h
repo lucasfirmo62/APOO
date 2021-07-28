@@ -39,6 +39,7 @@ class Button{
     virtual Keyboard* getKeyboard() = 0;
     virtual void press() = 0;
     virtual char getSymbol() = 0;
+    virtual void setCpu(Cpu*) = 0;
 };
 
 class DigitButton: public virtual Button{
@@ -59,7 +60,6 @@ class ControlButton: public virtual Button{
 class Keyboard{
   public:
     virtual void setCpu(Cpu*) = 0;
-    virtual Cpu* getCpu() = 0;
     virtual void addButton(Button*) = 0;
     virtual void press(Button*) = 0;
     virtual Button* findButtonBySymbol(char) = 0;

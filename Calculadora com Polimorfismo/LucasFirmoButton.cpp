@@ -1,15 +1,28 @@
 #include "LucasFirmoButton.h"
 
 
-void LucasFirmoButtonNull::setKeyboard(Keyboard*){   }
-Keyboard* LucasFirmoButtonNull::getKeyboard(){ return nullptr; }
-void LucasFirmoButtonNull::press(){    }
-char LucasFirmoButtonNull::getSymbol(){  return 0;  }
-void LucasFirmoButton::setKeyboard(Keyboard*){   }
-Keyboard* LucasFirmoButton::getKeyboard(){ return new LucasFirmoKeyboard(new LucasFirmoCpu(new LucasFirmoDisplay())); }
-void LucasFirmoButton::press(){    }
-char LucasFirmoButton::getSymbol(){  return 0;  }
+LucasFirmoButton::LucasFirmoButton(){
 
-Digit getDigit(){ return ZERO;  }
-Operation getOperation(){ return NONE; }
-Control getControl(){ return OFF; }
+}
+
+void LucasFirmoButton::setKeyboard(Keyboard*){
+
+}
+
+void LucasFirmoButton::setCpu(Cpu* cpu){
+	this->cpu = cpu;
+}
+
+Keyboard* LucasFirmoButton::getKeyboard(){
+	return nullptr;
+}
+
+void LucasFirmoButton::press(){
+
+	this->cpu->receiveDigit(ONE);
+
+
+	std::cout << ONE;
+
+}
+char LucasFirmoButton::getSymbol(){}

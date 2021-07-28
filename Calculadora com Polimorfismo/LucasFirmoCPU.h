@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Calculator.h"
-#include "LucasFirmoDisplay.h"
 #include <stdlib.h>
 
 
@@ -22,6 +21,7 @@ class LucasFirmoCpu: public Cpu{
     char displayNumbers[9];
     int numberInt;
     char* dispNumb;
+    Display *display;
     //char values[100];
 
   public:
