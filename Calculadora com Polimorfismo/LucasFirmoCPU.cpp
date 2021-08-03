@@ -10,7 +10,6 @@ LucasFirmoCpu::LucasFirmoCpu (Display * display){
 void LucasFirmoCpu::setDisplay (Display * display){
   this->display = display;
   numbers = new int (2);
-  //dispNumb = new char(9);
 }
 
 
@@ -26,8 +25,6 @@ void LucasFirmoCpu::add (int value){
 
 void LucasFirmoCpu::toInt(char number){
   numberInt = atoi(displayNumbers);
-  std::cout << "valor do int: " << numberInt << "\n\n";
-  std::cout << "valor do char: " << displayNumbers << "\n\n";
 }
 
 void LucasFirmoCpu::toString(Digit value){
@@ -55,6 +52,7 @@ void LucasFirmoCpu::receiveDigit (Digit value){
       qtd = 0;
     }
 
+
     toString(value);
 
 }
@@ -66,29 +64,25 @@ void LucasFirmoCpu::receiveOperation (Operation value){
   if (value == (ADDITION || SUBTRACTION || DIVISION || MULTIPLICATION)){
       saveOperation = value;
     }
-      //toInt(*displayNumbers);
-      //std::cout << numberInt;
-      //add(numberInt);
-      //ini = 0;
 
   if (value == 4){
     if(saveOperation == 0){
-      result = numbers[0] + numbers[1];
-      D.resultDigit (result);
-  }
-  if (saveOperation == 1){
-    result = numbers[0] - numbers[1];
-    D.resultDigit (result);
-  }
-  if (saveOperation == 2){
-    result = numbers[0] / numbers[1];
-    D.resultDigit (result);
-  }
-  if (saveOperation == 3){
-    result = numbers[0] * numbers[1];
-    D.resultDigit (result);
-  }
+        result = numbers[0] + numbers[1];
+        D.resultDigit (result);
     }
+    if (saveOperation == 1){
+      result = numbers[0] - numbers[1];
+      D.resultDigit (result);
+    }
+    if (saveOperation == 2){
+      result = numbers[0] / numbers[1];
+      D.resultDigit (result);
+    }
+    if (saveOperation == 3){
+      result = numbers[0] * numbers[1];
+      D.resultDigit (result);
+    }
+  }
 }
 
 void

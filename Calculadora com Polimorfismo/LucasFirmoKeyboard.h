@@ -7,6 +7,7 @@ class LucasFirmoKeyboard: public Keyboard{
   private:
     Cpu* cpu;
     Button* LucasFirmoButtons[1];
+    Button* button;
   public:
     LucasFirmoKeyboard(Cpu* cpu);
     void setCpu(Cpu* cpu);

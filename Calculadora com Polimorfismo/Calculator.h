@@ -38,7 +38,7 @@ class Button{
     virtual void setKeyboard(Keyboard*) = 0;
     virtual Keyboard* getKeyboard() = 0;
     virtual void press() = 0;
-    virtual char getSymbol() = 0;
+    virtual char getSymbol(Operation) = 0;
     virtual void setCpu(Cpu*) = 0;
 };
 

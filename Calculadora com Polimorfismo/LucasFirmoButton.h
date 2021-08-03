@@ -6,12 +6,14 @@
 
 class LucasFirmoButton: public virtual Button{
   private:
+    Button* digitButton;
     Cpu* cpu;
+    Keyboard* keyboard;
   public:
-    LucasFirmoButton();
-    void setKeyboard(Keyboard*);
+    LucasFirmoButton(char c, Digit value, Cpu* cpu);
+    void setKeyboard(Keyboard* keyboard);
     void setCpu(Cpu* cpu);
     Keyboard* getKeyboard();
     void press();
-    char getSymbol();
+    char getSymbol(Operation value);
 };
